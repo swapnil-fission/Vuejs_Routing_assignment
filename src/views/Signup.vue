@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Sidemenu/>
     <form>
       <div class="container">
         <h1>Sign Up</h1>
@@ -46,11 +47,18 @@
         </div>
       </div>
     </form>
+   <Header/>
   </div>
 </template>
 <script>
+import Header from '../components/Header.vue'
+import Sidemenu from '../components/Sidemenu.vue'
 export default {
-  name: 'Signup'
+  name: 'Signup',
+  components: {
+    Header,
+    Sidemenu
+  }
 }
 </script>
 <style scoped>
