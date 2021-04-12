@@ -1,18 +1,23 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+ <div>
+   <Computedandwatchers/>
+   <h2 class='changebackground'>home components</h2>
+ </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
-
+import Computedandwatchers from '../components/Computedandwatchers.vue'
 @Component({
   components: {
-    HelloWorld
+    Computedandwatchers
   }
 })
 export default class Home extends Vue {}
 </script>
+<style lang="scss">
+
+.changebackground {
+  background-color: blue;
+}
+</style>
